@@ -46,9 +46,7 @@ CURRENT_TZ=$(PGPASSWORD="$PG_PASS" psql -U "$PG_USER" -h localhost -p "$PG_PORT"
 if [ "$CURRENT_TZ" != "America/Sao_Paulo" ]; then
   echo "    Corrigindo timezone: $CURRENT_TZ → America/Sao_Paulo"
   PGPASSWORD="$PG_PASS" psql -U "$PG_USER" -h localhost -p "$PG_PORT" -d postgres \
-    -c "ALTER SYSTEM SET timezone = 'America/Sao_Paulo';" &>/dev/null
-  docker restart "$CONTAINER" &>/dev/null
-  sleep 3
+    -c "ALTER SYSTEM SET timezone = 'America/Sao_Paulo'; SELECT pg_reload_conf();" &>/dev/null
 fi
 
 # ── Cria bancos e tabelas ────────────────────────────────────────────────────
