@@ -22,6 +22,8 @@ else
   docker run -d \
     --name "$CONTAINER" \
     -e POSTGRES_PASSWORD="$PG_PASS" \
+    -e TZ=America/Sao_Paulo \
+    -e PGTZ=America/Sao_Paulo \
     -p "$PG_PORT":5432 \
     postgres:16
 fi
