@@ -48,7 +48,7 @@ clinica-veterinaria/
 ### 1. Crie o banco no PostgreSQL
 
 ```sql
-CREATE DATABASE clinica_veterinaria;
+CREATE DATABASE d_clinica_veterinaria;
 ```
 
 ### 2. Execute os scripts abaixo na ordem (respeita as foreign keys)
@@ -85,7 +85,7 @@ CREATE TABLE consulta (
 Abra `src/main/java/com/clinica/util/Conexao.java` e ajuste os dados:
 
 ```java
-private static final String URL      = "jdbc:postgresql://localhost:5432/clinica_veterinaria";
+private static final String URL      = "jdbc:postgresql://localhost:5432/d_clinica_veterinaria";
 private static final String USER     = "postgres";   // seu usuário PostgreSQL
 private static final String PASSWORD = "postgres";   // sua senha PostgreSQL
 ```

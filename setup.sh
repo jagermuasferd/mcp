@@ -58,9 +58,9 @@ create_db_and_tables() {
 }
 
 echo "[2/3] Criando bancos e tabelas..."
-create_db_and_tables clinica_veterinaria "$DIR/clinica-veterinaria/banco.sql"
-create_db_and_tables oficina_mecanica    "$DIR/oficina-mecanica/banco.sql"
-create_db_and_tables escola_cursos       "$DIR/escola-cursos-livres/banco.sql"
+create_db_and_tables d_clinica_veterinaria "$DIR/clinica-veterinaria/banco.sql"
+create_db_and_tables d_oficina_mecanica   "$DIR/oficina-mecanica/banco.sql"
+create_db_and_tables d_escola_cursos      "$DIR/escola-cursos-livres/banco.sql"
 
 echo "    Host: localhost | User: $PG_USER | Senha: $PG_PASS"
 
@@ -70,6 +70,6 @@ flatpak run io.dbeaver.DBeaverCommunity &>/dev/null &
 
 echo ""
 echo "Pronto! Bancos disponíveis:"
-echo "  clinica_veterinaria  →  branch clinica-veterinaria"
-echo "  oficina_mecanica     →  branch oficina-mecanica"
-echo "  escola_cursos        →  branch escola-cursos-livres"
+echo "  d_clinica_veterinaria  →  branch clinica-veterinaria"
+echo "  d_oficina_mecanica     →  branch oficina-mecanica"
+echo "  d_escola_cursos        →  branch escola-cursos-livres"

@@ -48,7 +48,7 @@ oficina-mecanica/
 ### 1. Crie o banco no PostgreSQL
 
 ```sql
-CREATE DATABASE oficina_mecanica;
+CREATE DATABASE d_oficina_mecanica;
 ```
 
 ### 2. Execute os scripts abaixo na ordem (respeita as foreign keys)
@@ -85,7 +85,7 @@ CREATE TABLE ordem_servico (
 Abra `src/main/java/com/oficina/util/Conexao.java` e ajuste os dados:
 
 ```java
-private static final String URL      = "jdbc:postgresql://localhost:5432/oficina_mecanica";
+private static final String URL      = "jdbc:postgresql://localhost:5432/d_oficina_mecanica";
 private static final String USER     = "postgres";   // seu usuário PostgreSQL
 private static final String PASSWORD = "postgres";   // sua senha PostgreSQL
 ```

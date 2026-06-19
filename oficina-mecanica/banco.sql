@@ -1,6 +1,6 @@
 -- Oficina Mecânica — Script de criação do banco de dados
--- Execute este arquivo no DBeaver conectado ao banco: oficina_mecanica
--- (crie o banco antes: CREATE DATABASE oficina_mecanica;)
+-- Execute este arquivo no DBeaver conectado ao banco: d_oficina_mecanica
+-- (crie o banco antes: CREATE DATABASE d_oficina_mecanica;)
 
 CREATE TABLE IF NOT EXISTS cliente (
     id        SERIAL PRIMARY KEY,

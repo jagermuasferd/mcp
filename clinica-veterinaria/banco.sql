@@ -1,6 +1,6 @@
 -- Clínica Veterinária — Script de criação do banco de dados
--- Execute este arquivo no DBeaver conectado ao banco: clinica_veterinaria
--- (crie o banco antes: CREATE DATABASE clinica_veterinaria;)
+-- Execute este arquivo no DBeaver conectado ao banco: d_clinica_veterinaria
+-- (crie o banco antes: CREATE DATABASE d_clinica_veterinaria;)
 
 CREATE TABLE IF NOT EXISTS tutor (
     id        SERIAL PRIMARY KEY,

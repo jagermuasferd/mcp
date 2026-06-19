@@ -1,6 +1,6 @@
 -- Escola de Cursos Livres — Script de criação do banco de dados
--- Execute este arquivo no DBeaver conectado ao banco: escola_cursos
--- (crie o banco antes: CREATE DATABASE escola_cursos;)
+-- Execute este arquivo no DBeaver conectado ao banco: d_escola_cursos
+-- (crie o banco antes: CREATE DATABASE d_escola_cursos;)
 
 CREATE TABLE IF NOT EXISTS aluno (
     id        SERIAL PRIMARY KEY,
