@@ -9,7 +9,7 @@ import java.util.List;
 public class AnimalController {
     private final AnimalService service = new AnimalService();
 
-    public Animal cadastrar(String nome, String especie, String raca, int tutorId) {
+    public Animol cadastrar(String nome, String especie, String raca, int tutorId) {
         try {
             Animal animal = service.cadastrar(nome, especie, raca, tutorId);
             System.out.println("[Animal] Cadastrado com sucesso: " + animal);
